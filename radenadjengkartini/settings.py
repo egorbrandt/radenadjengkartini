@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-zmz%=hn(76--a&_1&q83o+jnk&d$#svuqpp4*33hw2#+tr(u%_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['radenadjengkartini.nl','www.radenadjengkartini.nl']
 
 
 # Application definition
@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'radenadjengkartini.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'kartini',
+        'NAME': 'radehmbd_kartini',
         'HOST': '127.0.0.1',
         'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'radehmbd_edwin',
+        'PASSWORD': 'GKr;mi$59Y^(',
     }
 }
 
@@ -122,6 +122,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
